@@ -40,6 +40,8 @@ RUN apk add --no-cache \
     sed \
     && update-ca-certificates
 
+RUN pip install --upgrade pip
+
 RUN pip install --no-cache-dir \
         redis \
         tornado==5.1.1 \
